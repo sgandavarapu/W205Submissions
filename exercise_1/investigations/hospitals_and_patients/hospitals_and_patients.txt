@@ -1,0 +1,6 @@
+Each hospital conducted a survey of patients to obtain satisfactory ratings. Out of this a base score and consistency score were computed.
+For purposes of this analysis, these two scores are added to obtain a total score for each hospital.
+
+This total score assessed by patients is correlated with teh average rank percentile to see if the hospital rankings has any correlation with patient evaluations.
+
+The correlation coefficients turned out to be a -0.169 which shows that the patients perception of care in the hospitals seems to be opposite to the actual care that is being provided.

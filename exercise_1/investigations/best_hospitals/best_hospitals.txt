@@ -1,0 +1,32 @@
+Top 20 best hospitals are listed below. The approach and assumptions are listed below:
+
+Only hospitals that have measures for more than 50 procedures are considered for ranking. This is to ensure that best hospitals are selected only if all metrics are present.
+For each hospital and measure, rankings are computed based on the score percentile position within each measure. 
+It should be noted that all readmission scores are transformed as 100-original_score so that, they can be ranked as all other scores in the effective care
+Also, in the effective care measures, there are certain metrics that need to be ranked in ascending order. For example, average time spent by a patient waiting for ER (the lower the waiting time, the better). These time-based metrics are identified and are ranked in ascending order.
+All the rankings were handled in the transforming phase.
+
+Finally, after each hospital got a percentile rank for all its measures, an average, standard deviation and number of measures is calculated. 
+
+
+HID 	HNAME 											HSTATE 	AVG_PCT_RANK 			NUM_MEASURES
+250058  SOUTH CENTRAL REG MED CTR       				MS      0.7565162804323653      53
+050133  RIDEOUT MEMORIAL HOSPITAL       				CA      0.6833844692371495      53
+050390  HEMET VALLEY MEDICAL CENTER     				CA      0.672208742718145       52
+190060  LAKE CHARLES MEMORIAL HOSPITAL  				LA      0.6708836534463728      51
+010078  NORTHEAST ALABAMA REGIONAL MED CENTER   		AL      0.6643480586087863      53
+050045  EL CENTRO REGIONAL MEDICAL CENTER       		CA      0.6574613485142952      55
+380090  BAY AREA HOSPITAL       						OR      0.6321402632361199      52
+450389  EAST TEXAS MEDICAL CENTER ATHENS        		TX      0.6277817269257955      51
+110018  NEWTON MEDICAL CENTER   						GA      0.6251358087810018      51
+050121  ADVENTIST MEDICAL CENTER        				CA      0.6249373063815254      51
+100137  HEART OF FLORIDA REGIONAL MEDICAL CENTER        FL      0.623515927194725       51
+330059  MONTEFIORE MEDICAL CENTER       				NY      0.6226618948081813      53
+230216  PORT HURON HOSPITAL     						MI      0.6219241637912162      53
+050126  VALLEY PRESBYTERIAN HOSPITAL    				CA      0.6215364621436417      53
+330004  HEALTHALLIANCE HOSPITAL BROADWAY CAMPUS 		NY      0.6207350039627524      52
+360118  MEDCENTRAL HEALTH SYSTEM MANSFIELD HOSPITAL     OH      0.614072025272218       54
+390016  JAMESON MEMORIAL HOSPITAL       				PA      0.6092063550635127      52
+180051  JENNIE STUART MEDICAL CENTER    				KY      0.6076274223279788      52
+050746  WESTERN MEDICAL CENTER SANTA ANA       			CA      0.6066297733408856      51
+100062  MUNROE REGIONAL MEDICAL CENTER  				FL      0.600716665351221       53

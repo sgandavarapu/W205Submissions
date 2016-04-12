@@ -1,0 +1,19 @@
+Q1: What is the difference between EBS and S3?
+EBS is a block storage to be used with any specific EC2 instances. It is only available in a particular geographical areas where it is initially created from. It is analogous to
+an external hard disk which can be formatted and is backed up
+On the other hand, S3 buckets are objects (and not a file system) that is relatively cheaper than EBS. It is also accessible from any geographical location which makes it easier for 
+usage in any world wide application (such as logging to a website)
+
+Q2: When would you consider a cloud infrastructure for your data science tasks?
+There may be a variety of reasons to consider a cloud based infrastructure setup as opposed to traditional data centres. If we are unsure of the demand of the new application that is 
+being developed, cloud would be a great option because it can be scaled as per the demand requirement. Also, cloud offers a faster to market solution with no hassle of maintaining a separate
+IT team. 
+
+Q3: What is the difference between spot instances and reserved instances?
+Reserved instances are cheaper than on-demand (spot) EC2 instances, for the same configuration of EC2 clusters. Reserved instances is analogous to reserving capacity on the 
+Amazon cloud in advance. Such a reservation is rewarded by cheaper prices from Amazon. However, the users need to enter into either a 1 or 3 year contract. Hence, the users lose
+flexibility of changing the machine configurations while obtaining a cheaper prices. If a service has predictable demand over the near future, reserved instances is a better option.
+
+Q4: List the names of four software packages installed on the UCB AMI
+
+Python 2.6.6, Ipython, Spark, Hadoop

@@ -1,0 +1,52 @@
+
+1. List the HDFS contents of /user
+
+[w205@ip-172-31-59-121 ~]$ hdfs dfs -ls /user
+Found 8 items
+drwxr-xr-x   - mapred  supergroup          0 2016-01-25 06:14 /user/history
+drwxrwxrwx   - hive    supergroup          0 2016-01-25 06:15 /user/hive
+drwxrwxrwx   - hue     supergroup          0 2016-01-25 06:16 /user/hue
+drwxrwxrwx   - jenkins supergroup          0 2016-01-25 06:15 /user/jenkins
+drwxrwxrwx   - oozie   supergroup          0 2016-01-25 06:16 /user/oozie
+drwxrwxrwx   - root    supergroup          0 2016-01-25 06:15 /user/root
+drwxr-xr-x   - hdfs    supergroup          0 2016-01-25 06:18 /user/spark
+drwxr-xr-x   - w205    supergroup          0 2016-01-25 06:18 /user/w205
+
+
+2. List the HDFS contents of /user
+
+1 Live node is used.
+DFS Used: 143508164 (136.86 MB)
+Non DFS Used: 5474274620 (5.10 GB)
+
+Full report below
+-----------------------------------
+Configured Capacity: 105555197952 (98.31 GB)
+Present Capacity: 100080923332 (93.21 GB)
+DFS Remaining: 99937415168 (93.07 GB)
+DFS Used: 143508164 (136.86 MB)
+DFS Used%: 0.14%
+Under replicated blocks: 0
+Blocks with corrupt replicas: 0
+Missing blocks: 0
+Missing blocks (with replication factor 1): 0
+
+-------------------------------------------------
+Live datanodes (1):
+
+Name: 127.0.0.1:50010 (localhost)
+Hostname: ip-172-31-59-121.ec2.internal
+Decommission Status : Normal
+Configured Capacity: 105555197952 (98.31 GB)
+DFS Used: 143508164 (136.86 MB)
+Non DFS Used: 5474274620 (5.10 GB)
+DFS Remaining: 99937415168 (93.07 GB)
+DFS Used%: 0.14%
+DFS Remaining%: 94.68%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 2
+Last contact: Mon Jan 25 06:27:51 UTC 2016

@@ -1,0 +1,26 @@
+
+1 and 2)
+
+Hive exeution time: 118.265 seconds, Jobs launched -  2.
+Spark execution time: 31.383 seconds, Jobs launched -  0.
+Parquet execution time: 7.705 seconds.
+ 
+
+3) Query to join user_info and weblogs_parquet. Top 5 locations listed below.
+
+spark-sql> SELECT location, COUNT(location) as count_loc
+         > FROM weblogs_parquet A
+         > JOIN user_info B
+         > ON A.user_id = B.user_id
+         > GROUP BY B.location
+         > ORDER BY count_loc DESC
+         > LIMIT 5;
+
+La Fayette      49
+Leeds   47
+Blountsville    46
+Hayden  45
+Hamilton        45
+
+Time taken: 7.197 seconds, Fetched 5 row(s)
+

@@ -1,0 +1,15 @@
+Submission 1:
+
+Sorted and unsorted first 10 rows attached as screen shot.
+
+The tuples values have key as their first value. By re-doing the tuple as below, we can fix that.
+
+narcoticsCrimeTuples = narcoticsCrimes.map(lambda x:(x.split(",")[0],x[1:]))
+
+Second screen shot is attached that shows how this fixes the problem.
+
+Submission 2: Number of ebay entries
+3943
+
+Submission 3: Number of counts from web session log files
+40002
